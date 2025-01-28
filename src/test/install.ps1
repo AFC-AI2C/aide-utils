@@ -2,7 +2,7 @@
  
 # Download the root CA certificate.
 Write-Output "[+] Downloading root CA certificate..."
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/angusmf1/aide-utils/refs/heads/main/files/test/rootCA.crt" -OutFile "$env:USERPROFILE\Downloads\rootCA.crt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AFC-AI2C/aide-utils/refs/heads/main/files/test/rootCA.crt" -OutFile "$env:USERPROFILE\Downloads\rootCA.crt"
  
 # Install the root CA certificate.
 Write-Output "[+] Preparing root CA..."
@@ -11,7 +11,7 @@ Import-Certificate -FilePath "$env:USERPROFILE\Downloads\rootCA.crt" -CertStoreL
 # Define paths
 $HostsFilePath = "C:\Windows\System32\drivers\etc\hosts"
 $BackupHostsFilePath = "C:\Windows\System32\drivers\etc\hosts.bak"
-$HostsTxtUrl = "https://raw.githubusercontent.com/angusmf1/aide-utils/refs/heads/main/files/test/hosts.txt"
+$HostsTxtUrl = "https://raw.githubusercontent.com/AFC-AI2C/aide-utils/refs/heads/main/files/test/hosts.txt"
 
 # Back up the original hosts file
 Copy-Item -Path $HostsFilePath -Destination $BackupHostsFilePath -Force
