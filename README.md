@@ -12,13 +12,13 @@ This repository contains various utilities for working with the AI Development E
 On UNIX (Bash):
 
 ```bash
-curl -sfL https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/src/dev/install.sh | bash -
+curl -sfL https://raw.githubusercontent.com/AFC-AI2C/aide-utils/refs/heads/main/src/dev/install.sh | bash -
 ```
 
 On Windows (Powershell):
 
 ```powershell
-. { iwr -useb https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/src/dev/install.ps1 } | iex;
+. { iwr -useb https://raw.githubusercontent.com/AFC-AI2C/aide-utils/refs/heads/main/src/dev/install.ps1 } | iex;
 ```
 
 ### Installation for AIDE-Test
@@ -26,15 +26,14 @@ On Windows (Powershell):
 On UNIX (Bash):
 
 ```bash
-curl -sfL https://raw.githubusercontent.com/angusmf1/aide-utils/refs/heads/main/src/test/install.sh | bash -
+curl -sfL https://raw.githubusercontent.com/AFC-AI2C/aide-utils/refs/heads/main/src/test/install.sh | bash -
 ```
 
 On Windows (Powershell):
 
 ```powershell
-. { iwr -useb https://raw.githubusercontent.com/angusmf1/aide-utils/refs/heads/main/src/test/install.ps1 } | iex;
+. { iwr -useb https://raw.githubusercontent.com/AFC-AI2C/aide-utils/refs/heads/main/src/test/install.ps1 } | iex;
 ```
-
 
 ### Instructions for cArmy AVD Users
 
