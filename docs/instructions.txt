@@ -1,0 +1,24 @@
+Instructions to get the rootCA.crt for AIDE after the installation of AIDE Cosmos.
+
+1. Navigate to mkcert dir
+cd $(mkcert -CAROOT)
+
+2. Check for rootCA
+~/.local/share/mkcert$ ls
+> rootCA-key.pem  rootCA.pem
+
+3. Create a .crt copy
+cp rootCA.pem rootCA.crt
+
+4. Verify the copy exists
+~/.local/share/mkcert$ ls
+>rootCA-key.pem  rootCA.crt  rootCA.pem
+
+5. Verify the cert
+openssl x509 -in rootCA.crt -text -noout
+
+6. Copy cert to user desktop
+cp rootCA.crt /mnt/c/Users/<insert user info>/"OneDrive - US Army"/Desktop/
+
+7. Install the rootCA cert
+Import-Certificate -FilePath "$env:USERPROFILE\OneDrive - US Army\Desktop\rootCA.crt" -CertStoreLocation "Cert:\CurrentUser\Root\"
